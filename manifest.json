@@ -1,0 +1,19 @@
+{
+  "pack": "meripehchaan-digilocker-agent-skills",
+  "source_spec": "Requester - Meri Pehchaan API Specification v2.4, Sep 2026",
+  "skills": [
+    "meripehchaan-account-identity",
+    "meripehchaan-apaar-education",
+    "meripehchaan-file-apis",
+    "meripehchaan-integration-architect",
+    "meripehchaan-integration-reviewer",
+    "meripehchaan-meta-apis",
+    "meripehchaan-oauth-pkce",
+    "meripehchaan-pull-documents",
+    "meripehchaan-push-uri",
+    "meripehchaan-security-consent",
+    "meripehchaan-testing-debugging",
+    "meripehchaan-typescript-nestjs"
+  ],
+  "original_pdf_included": false
+}
