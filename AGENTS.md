@@ -12,3 +12,11 @@
 10. Build failure handling for documented non-standard statuses such as HTTP 530.
 11. Samples in the PDF occasionally contain malformed JSON punctuation. Derive schemas from the prose field definitions, not by blindly pasting sample JSON.
 12. If implementing identity or education verification, persist provenance: which endpoint/document established which fact, at what time, under what consent, and for which DigiLocker account.
+
+## Pack maintenance rules
+
+13. Each skill must be installable independently. Do not reference `../../reference/` or sibling skill directories from an installed `SKILL.md`.
+14. Any local supporting reference must reside under the same skill's `references/` folder.
+15. Run `node scripts/validate-skills.mjs` and `node --test scripts/validate-skills.test.mjs` before a PR; observe GitHub Actions installation results.
+16. The original September 2026 v2.4 PDF is absent here. Mark any provider-contract uncertainty `NEEDS_PARTNER_CONFIRMATION`, and live tests not executed `NOT RUN`.
+17. A green structural test is not a production integration test. Never claim live endpoints, issuer rights, sensitive-data consent or cryptographic hashes have been verified without evidence.

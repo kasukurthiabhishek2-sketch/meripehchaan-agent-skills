@@ -21,11 +21,22 @@ The goal is not merely to make an agent remember endpoint URLs. The skills teach
 | `meripehchaan-integration-reviewer` | Independent audit/review of an existing implementation against v2.4 |
 | `meripehchaan-typescript-nestjs` | Production TypeScript/NestJS/Next.js implementation patterns |
 
-## Install / use
+## Install with npx
 
-These are portable `SKILL.md` folders. Copy one or more directories from `skills/` into the skills directory used by your agent or IDE. If your agent supports project-local skills, keeping the whole `skills/` directory in the project is usually the least dramatic option.
+These are 12 independent [Agent Skills](https://agentskills.io/specification), each with a `SKILL.md` and a bundled `references/acceptance.md`. Use the maintained [skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md), not an npm package named "plugin".
 
-The **master skill** is `skills/meripehchaan-integration-architect/SKILL.md`. It tells the agent when to pull in the narrower skills.
+```bash
+# Inspect what is available
+npx skills add kasukurthiabhishek2-sketch/meripehchaan-agent-skills --list
+
+# Install the integration architect for AGY CLI
+npx skills add kasukurthiabhishek2-sketch/meripehchaan-agent-skills --skill meripehchaan-integration-architect --agent antigravity-cli --yes
+
+# Install the full pack into your current project
+npx skills add kasukurthiabhishek2-sketch/meripehchaan-agent-skills --skill '*' --agent antigravity-cli --yes
+```
+
+Use `--agent antigravity` for Antigravity desktop, `--agent codex` for Codex, or `--agent cursor` for Cursor. The published CLI's latest documented runtime requires Node.js 22.20+. **Requester-only applications should exclude `meripehchaan-push-uri`**, which requires a registered issuer. See [INSTALL.md](INSTALL.md).
 
 ## Source policy
 
@@ -44,3 +55,14 @@ Do not let an agent accidentally implement a 2023-era integration from an old bl
 ## Public-repo hygiene
 
 Never commit `client_secret`, access tokens, refresh tokens, real DigiLocker user payloads, e-Aadhaar XML, certificate files, or real production callback query strings. Examples in this pack use placeholders.
+
+## Quality checks and evidence limits
+
+```bash
+node scripts/validate-skills.mjs
+node --test scripts/validate-skills.test.mjs
+```
+
+GitHub Actions additionally tests installation of the copied skills with `npx skills` into Antigravity CLI, Codex, and Cursor. These tests validate packaging and references, **not** the live government endpoints.
+
+**Source provenance:** the September 2026 v2.4 PDF is not in this public repository and was not independently authenticated in this audit. Treat its endpoint and field statements as repository transcriptions until the original partner document and environment are confirmed. See [AUDIT.md](AUDIT.md) for every skill's remediation, limitations, and remaining provider-contract blockers.
