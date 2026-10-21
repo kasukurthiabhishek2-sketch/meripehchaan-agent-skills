@@ -18,6 +18,8 @@ export function checkSkill(dir, expectedName) {
   const description = /^description:\s*(.*?)\s*$/m.exec(fm[1])?.[1]?.replace(/^['"]|['"]$/g,"");
   if (name !== expectedName || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name ?? "") || (name?.length ?? 999) > 64) problems.push("invalid name");
   if (!description || description.length > 1024) problems.push("invalid description");
+  const rawDesc = /^description:\s*(.*?)\s*$/m.exec(fm[1])?.[1] ?? "";
+  if (/:(?:\s|$)/.test(rawDesc) && !/^[\x22\x27]/.test(rawDesc)) problems.push("unquoted YAML colon in description");
   for (const section of ["## Operational procedure","## Acceptance tests","NEEDS_PARTNER_CONFIRMATION","NOT RUN"]) {
     if (!content.includes(section)) problems.push("missing instruction: "+section);
   }

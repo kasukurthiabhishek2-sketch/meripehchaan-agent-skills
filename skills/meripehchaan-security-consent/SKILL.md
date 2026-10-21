@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-security-consent
-description: Use for security, privacy, consent, token storage, secret handling, state/PKCE validation, sensitive DigiLocker/APAAR/e-Aadhaar data retention, audit trails, and threat modeling around the Meri Pehchaan v2.4 integration.
+description: "Use for security, privacy, consent, token storage, secret handling, state/PKCE validation, sensitive DigiLocker/APAAR/e-Aadhaar data retention, audit trails, and threat modeling around the Meri Pehchaan v2.4 integration."
 ---
 
 # Security and Consent Guardrails

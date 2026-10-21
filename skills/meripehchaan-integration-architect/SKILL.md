@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-integration-architect
-description: Use for any end-to-end Meri Pehchaan / DigiLocker Requester API v2.4 implementation, migration, architecture, integration planning, or multi-endpoint task. Routes work to the specialist skills and prevents legacy/vague implementations.
+description: "Use for any end-to-end Meri Pehchaan / DigiLocker Requester API v2.4 implementation, migration, architecture, integration planning, or multi-endpoint task. Routes work to the specialist skills and prevents legacy/vague implementations."
 ---
 
 # Meri Pehchaan Integration Architect

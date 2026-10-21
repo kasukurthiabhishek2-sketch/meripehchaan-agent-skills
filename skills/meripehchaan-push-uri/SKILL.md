@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-push-uri
-description: Use for DigiLocker issuer-side Push URI to Account integration, including A/U/D actions, certificate metadata, optional PDF/XML content, DigiLocker account targeting, timestamping, request hash input ordering, and issuer prerequisites.
+description: "Use for DigiLocker issuer-side Push URI to Account integration, including A/U/D actions, certificate metadata, optional PDF/XML content, DigiLocker account targeting, timestamping, request hash input ordering, and issuer prerequisites."
 ---
 
 # Push URI to Account

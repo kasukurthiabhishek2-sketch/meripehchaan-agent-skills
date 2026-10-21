@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-testing-debugging
-description: Use when testing, debugging, mocking, contract-testing, or production-hardening a Meri Pehchaan/DigiLocker Requester v2.4 integration. Covers positive and negative flows, cryptographic golden vectors, documented errors, status 530, and doc ambiguities.
+description: "Use when testing, debugging, mocking, contract-testing, or production-hardening a Meri Pehchaan/DigiLocker Requester v2.4 integration. Covers positive and negative flows, cryptographic golden vectors, documented errors, status 530, and doc ambiguities."
 ---
 
 # Testing and Debugging Expert

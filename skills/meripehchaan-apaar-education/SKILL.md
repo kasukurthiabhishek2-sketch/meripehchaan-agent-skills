@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-apaar-education
-description: Use for APAAR integration and education/academic verification with Meri Pehchaan v2.4, including student identity, universities, courses, subjects, credits, grades, and handling APAAR-not-linked or unavailable states.
+description: "Use for APAAR integration and education/academic verification with Meri Pehchaan v2.4, including student identity, universities, courses, subjects, credits, grades, and handling APAAR-not-linked or unavailable states."
 ---
 
 # APAAR and Education Verification

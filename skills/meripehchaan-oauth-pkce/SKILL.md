@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-oauth-pkce
-description: Use when implementing or debugging Meri Pehchaan OAuth 2.0 authorization, PKCE, OpenID Connect token exchange, regular token exchange, refresh, token revocation, session logout, scopes, AMR, prompt, or callback handling.
+description: "Use when implementing or debugging Meri Pehchaan OAuth 2.0 authorization, PKCE, OpenID Connect token exchange, regular token exchange, refresh, token revocation, session logout, scopes, AMR, prompt, or callback handling."
 ---
 
 # OAuth, PKCE and Token Lifecycle Expert

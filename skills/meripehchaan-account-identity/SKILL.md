@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-account-identity
-description: Use when binding a local user to a DigiLocker/Meri Pehchaan account, calling Get User Details, matching profile identity, using mobile/picture/email fields, or designing evidence for verified-profile workflows.
+description: "Use when binding a local user to a DigiLocker/Meri Pehchaan account, calling Get User Details, matching profile identity, using mobile/picture/email fields, or designing evidence for verified-profile workflows."
 ---
 
 # Account Identity and Profile Binding

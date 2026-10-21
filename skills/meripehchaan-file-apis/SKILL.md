@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-file-apis
-description: Use for DigiLocker self-uploaded and issued-document listing, binary download, XML certificate retrieval, e-Aadhaar XML, upload, file HMAC verification, MIME/size validation, or document storage handling.
+description: "Use for DigiLocker self-uploaded and issued-document listing, binary download, XML certificate retrieval, e-Aadhaar XML, upload, file HMAC verification, MIME/size validation, or document storage handling."
 ---
 
 # DigiLocker File APIs

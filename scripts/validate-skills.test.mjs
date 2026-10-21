@@ -39,3 +39,15 @@ test("wrong name is rejected",()=>{
     assert(checkSkill(dir,name).some(x=>x.includes("invalid name")));
   }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
+
+test("unquoted YAML colon in description is rejected",()=>{
+  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),"broken-yaml-"));
+  try {
+    const name=names[0], dir=path.join(tmp,name);
+    fs.cpSync(path.join(root,"skills",name),dir,{recursive:true});
+    const file=path.join(dir,"SKILL.md");
+    const content=fs.readFileSync(file,"utf8").replace(/^description:.*$/m,"description: Use when: example");
+    fs.writeFileSync(file,content);
+    assert(checkSkill(dir,name).some(x=>x.includes("unquoted YAML colon")));
+  } finally { fs.rmSync(tmp,{recursive:true,force:true}); }
+});

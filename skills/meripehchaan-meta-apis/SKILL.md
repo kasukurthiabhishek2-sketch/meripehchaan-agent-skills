@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-meta-apis
-description: Use when calling Meri Pehchaan/DigiLocker requester meta APIs for issuer discovery, document types, search parameter schemas, statistics, or when implementing the spec-defined SHA-256 concatenation authentication value named hmac.
+description: "Use when calling Meri Pehchaan/DigiLocker requester meta APIs for issuer discovery, document types, search parameter schemas, statistics, or when implementing the spec-defined SHA-256 concatenation authentication value named hmac."
 ---
 
 # Meta APIs and Spec-Defined Request Hashes

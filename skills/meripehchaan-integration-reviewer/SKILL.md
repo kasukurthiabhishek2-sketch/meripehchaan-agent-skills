@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-integration-reviewer
-description: Use to audit an existing Meri Pehchaan/DigiLocker Requester integration against v2.4 for correctness, security, missing fields, obsolete endpoints, incorrect crypto, consent gaps, error handling, or production-readiness issues.
+description: "Use to audit an existing Meri Pehchaan/DigiLocker Requester integration against v2.4 for correctness, security, missing fields, obsolete endpoints, incorrect crypto, consent gaps, error handling, or production-readiness issues."
 ---
 
 # Independent Integration Reviewer

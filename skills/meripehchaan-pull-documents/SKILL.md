@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-pull-documents
-description: Use when implementing the end-to-end DigiLocker Pull Document flow: discover issuers, discover doctypes, fetch dynamic search parameters, collect required Aadhaar-sharing consent, call Pull Document, and handle pending/not-found/existing-document states.
+description: "Use when implementing the end-to-end DigiLocker Pull Document flow: discover issuers, discover doctypes, fetch dynamic search parameters, collect required Aadhaar-sharing consent, call Pull Document, and handle pending/not-found/existing-document states."
 ---
 
 # Pull Document Expert

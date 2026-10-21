@@ -1,6 +1,6 @@
 ---
 name: meripehchaan-typescript-nestjs
-description: Use when implementing Meri Pehchaan / DigiLocker Requester API v2.4 in TypeScript, Node.js, NestJS, or a Next.js-plus-backend architecture. Provides module boundaries, DTO patterns, callback/controller rules, crypto helpers, persistence and test strategy.
+description: "Use when implementing Meri Pehchaan / DigiLocker Requester API v2.4 in TypeScript, Node.js, NestJS, or a Next.js-plus-backend architecture. Provides module boundaries, DTO patterns, callback/controller rules, crypto helpers, persistence and test strategy."
 ---
 
 # TypeScript / NestJS Implementation Specialist
